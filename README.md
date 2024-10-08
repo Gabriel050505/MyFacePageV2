@@ -1,15 +1,19 @@
-No início troquei a fonte, removi a margem padrão e deixei todos os textos em negrito.
+# Sobre o site
+Criei um site de página de apresentação pessoal, contendo pequenas informações sobre mim como meu nimo, biografia, interesses e hobbies e contato. 
+
+### Tudo
+No início removi a margem padrão,  troquei a fonte e deixei todos os textos em negrito.
 
 ### Cabeçalho 
-Deixei a width como 100 viewport width para ocupar toda a largura do dispositivo (também fiz isso no rodapé).
+Deixei a width como 100 viewport width para ocupar toda a largura do dispositivo e fixed para que permaneca na tela (também fiz isso no rodapé).
 Adicionei um h1 e h2 para os títulos.
-Criei o botão de menu através de códigos e padding.
+Criei o botão que acessa o menu através de padding e outros códigos.
 
 ### Biografia, Contato e Interesses e Hobbies 
-Criei uma formatação básica usando padding e listas.
+Criei uma formatação básica usando padding e listas, alterando para que as listas tenham quadrado ao invés de pontos
 
 ### Menu 
-Criei um link de acesso rapido para as sessões de Biografia, Contato e Interesses e Hobbies.
+Criei um menu de acesso rapido para as sessões de Biografia, Contato e Interesses e Hobbies, utilizando de links e IDs, além de uma opção para quem opta por um modo claro.
 
 ### Footer
-Deixar o footer fixed junto da imagem.
+Deixei o footer na posição fixed junto da imagem.
