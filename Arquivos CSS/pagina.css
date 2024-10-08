@@ -1,0 +1,145 @@
+/* Tira a margem padrão, remove a decoração de links dos textos e deixa em negrito */
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* Formatação do Cabeçalho */
+    header {
+        color: #f0f0f0;
+        display: flex;
+        padding: 20px;
+}
+
+/* Formatação do Título  */
+    h1 {
+        margin-left: 50px;
+        align-content: center;
+        padding: 10px;
+}
+
+/* Formatação do meu nome */
+    h2 {
+        margin-top: 50px;
+        margin-left: 160px;
+        position: absolute;
+}
+
+/* Formatação das imagens */
+img {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 5;
+    left: 80vw;
+}
+
+/* Ajustando a imagem do rodapé */
+footer img {
+    width: 40px;
+    height: 40px;
+    bottom: 0;
+    left: 0;
+}
+
+/* Botão do menu sidebar */
+    .quadrado {
+        height: 10px;    
+        width: 10px;
+        background-color: #f0f0f0;
+        margin-bottom: 4px;
+
+    }
+
+    .retangulo {
+        height: 10px;    
+        width: 10px;
+        background-color: #f0f0f0;
+        padding-right: 30px;
+        margin-bottom: 4px;
+        margin-left: 5px;
+    }
+
+    #secao1, #secao2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    a {
+        display: flex;
+    }
+
+    container {
+        display: flex;
+        font-size: 0;
+        align-content: center;
+        padding: 10px;
+        border-radius: 10px;
+}
+
+/* Formatação do footer */
+footer {
+    padding: 10px;
+    color: #f0f0f0;
+    text-align: center;
+    font-size: 1.1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+/* Deixando o cabeçalho, rodapé e os textos(divs) com uma imagem de fundo com efeito parallax */
+header, footer, div {
+    background-image: url(../imagens/fundo.png);
+    background-size: cover; /*Impede que existam várias imagens no fundo para cobrir, fazendo com que use apenas uma*/
+    background-attachment: fixed; /* Cria o efeito parallax*/
+    font-weight: bold;
+}
+
+/* Formata os textos principais (biografia, contato e interesses/hobbies) */
+div {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 25px;
+    padding: 20px;
+    color: #f0f0f0;
+}
+
+/* Deixa a pontuação das listas quadradas em vez de circulos */
+ul {
+    list-style-type:square;
+}
+
+/* Arrumando as bordas da caixa de biografia, contato e interesses/hobbies */
+#biografia {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#contato {
+    border-radius: 0;
+}
+
+#inthob {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* Adiciona um efeito de deslizamento aos textos */
+@keyframes slideIn2 {
+    from {
+      transform: translateX(30%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+ div {
+    animation-name: slideIn2; /* Cria a animação */
+    animation-duration: 1s; /* Define a duração da animação */
+}
