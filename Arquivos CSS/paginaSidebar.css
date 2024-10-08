@@ -1,0 +1,214 @@
+/* Tira a margem padrão, remove a decoração de links dos textos e deixa em negrito */
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Deixa todos os textos branco */
+body {
+    background-color: #f0f0f0;
+}
+
+/* Formatação do cabeçalho */
+    header {
+        color: #f0f0f0;
+        display: flex;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+}
+
+/* Formatação do título  */
+    h1 {
+        margin-left: 50px;
+        align-content: center;
+        padding: 10px;
+}
+
+/* Formatação do meu nome */
+    h2 {
+        margin-top: 50px;
+        margin-left: 160px;
+        position: absolute;
+}
+
+/* Ajustando as imagens */
+img {
+    height: 200;
+    width: 200px;
+    position: absolute;
+    top: 5;
+    left: 80vw;
+}
+
+/* Botão do menu sidebar */
+    .quadrado {
+        height: 10px;    
+        width: 10px;
+        background-color: #f0f0f0;
+        margin-bottom: 4px;
+
+    }
+
+    .retangulo {
+        height: 10px;    
+        width: 10px;
+        background-color: #f0f0f0;
+        padding-right: 30px;
+        margin-bottom: 4px;
+        margin-left: 5px;
+    }
+
+    #secao1, #secao2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    a {
+        display: flex;
+    }
+
+    body header container {
+        display: flex;
+        font-size: 0;
+        align-content: center;
+        padding: 10px;
+        border-radius: 10px;
+}
+
+footer {
+    padding: 10px;
+    color: #f0f0f0;
+    text-align: center;
+    font-size: 1.1rem;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Deixando o cabeçalho, rodapé e os textos(divs) com uma imagem de fundo com efeito parallax */
+header, footer, div {
+    background-image: url(../imagens/fundo.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Deixa o cabeçalho e o rodapé ocuparem a largura da tela inteira */
+header, footer {
+    width: 100vw;
+}
+
+/* Formata o Sidebar/Menu */
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: #340453;
+    position: fixed;
+    border-top-right-radius: 10px;
+}
+
+/* Impede que o Sidebar/Menu cubra os textos */
+container ul, container h3, #introducao{
+    padding-left:270px;
+}
+
+/* Adiciona um efeito de deslizamento ao Menu */
+@keyframes slideIn1 {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  #sidebar {
+    animation-name: slideIn1; /* Cria a animação */
+    animation-duration: 1s; /* Define a duração da animação */
+}
+
+/* Adiciona um efeito de deslizamento aos textos */
+@keyframes slideIn2 {
+    from {
+      transform: translateX(-30%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+ div {
+    animation-name: slideIn2; /* Cria a animação */
+    animation-duration: 1s; /* Define a duração da animação */
+}
+  
+/* Deixa a pontuação das listas quadradas em vez de circulos */
+ul {
+    list-style-type:square;
+}
+
+/* Formata o texto do Menu */
+#sidebar li {
+    padding-top: 10px;
+    color: #f0f0f0;
+    font-size: 1.5rem;
+}
+
+/* Formata o botão */
+button {
+    margin-top: 100px;
+    margin-left: 20%;
+    padding: 10px;
+    background-color: #333;
+    color: #f0f0f0;
+    border-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+/* Faz com que o botão mude quando o mouse passar por cima */
+button:hover {
+    background-color: #f0f0f0;
+    color: #333;
+    border-color: #333;
+    cursor: pointer;
+}
+
+/* Formata os textos principais (biografia, contato e interesses/hobbies) */
+div {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    padding: 25px;
+    color: #f0f0f0;
+}
+
+/* Arrumando as bordas da caixa de biografia, contato e interesses/hobbies */
+#biografia {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: 125px;
+}
+
+#contato {
+    border-radius: 0;
+}
+
+#inthob {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+footer img {
+    width: 40px;
+    height: 40px;
+    bottom: 0;
+    left: 0;
+}
